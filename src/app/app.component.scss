@@ -1,0 +1,196 @@
+// Estilos globales
+$de-york-50: #f3faf3;
+$de-york-100: #e4f4e6;
+$de-york-200: #cae8cd;
+$de-york-300: #91cd96; // Color principal
+$de-york-400: #70b876;
+$de-york-500: #4c9b53;
+$de-york-600: #3a7f40;
+$de-york-700: #306535;
+$de-york-800: #2a512e;
+$de-york-900: #244327;
+$de-york-950: #0f2412;
+
+$error-color: #ff2323;
+
+div {
+  max-width: 1200px;
+  padding: 20px;
+}
+
+// Styles for mobile and tablet screens
+@media (max-width: 768px) {
+  #title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 20px auto;
+      padding-top: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 30px;
+      color: #414042;
+    }
+  }
+  #form {
+    img {
+      display: block;
+      width: 100%;
+    }
+    fieldset {
+      width: 90%;
+      margin: 10px auto;
+      border: 2px solid #244327;
+      padding: 10px;
+      legend {
+        color: #244327;
+        text-align: center;
+        padding: 0 5px;
+      }
+      label {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 15px;
+        span {
+          display: block;
+          color: #2b502f;
+        }
+        input,
+        select {
+          width: 100%;
+          padding: 8px;
+          border: 2px solid #2b502f;
+          margin-top: 5px;
+          color: #2b502f;
+          box-sizing: border-box;
+        }
+        .label-error {
+          color: $error-color;
+        }
+      }
+    }
+    p {
+      color: $de-york-950;
+      margin-bottom: 10px;
+      a {
+        color: $de-york-500;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: #4c9b53;
+    }
+    button:hover {
+      background-color: #3a7f40;
+    }
+    button:disabled {
+      background-color: #cae8cd;
+      color: #306535;
+      cursor: not-allowed;
+    }
+  }
+}
+
+// Styles for desktop screens
+@media (min-width: 769px) {
+  div {
+    margin: 0 auto;
+    #title {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        padding-top: 20px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 50px;
+        color: #414042;
+      }
+    }
+    #form {
+      img {
+        display: inline-block;
+        width: 50%;
+      }
+      form {
+        display: inline-block;
+        width: 50%;
+        fieldset {
+          border: 2px solid #244327;
+          padding: 10px;
+          margin-bottom: 10px;
+          legend {
+            text-align: center;
+            color: #244327;
+          }
+          label {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            span {
+              display: block;
+              color: #2b502f;
+            }
+            input,
+            select {
+              width: 100%;
+              padding: 8px;
+              border: 2px solid #2b502f;
+              margin-top: 5px;
+              color: #2b502f;
+              box-sizing: border-box;
+            }
+            .label-error {
+              color: $error-color;
+            }
+          }
+        }
+        p {
+          color: $de-york-950;
+          margin-bottom: 10px;
+          a {
+            color: $de-york-500;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          background-color: #4c9b53;
+        }
+        button:hover {
+          background-color: #3a7f40;
+        }
+        button:disabled {
+          background-color: #cae8cd;
+          color: #306535;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
