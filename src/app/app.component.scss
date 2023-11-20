@@ -24,11 +24,13 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    img {
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto 20px auto;
-      padding-top: 20px;
+    a {
+      img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 20px auto;
+        padding-top: 20px;
+      }
     }
     h2 {
       text-align: center;
@@ -112,11 +114,14 @@ div {
     #title {
       display: flex;
       flex-direction: column;
-      img {
-        width: 100%;
-        max-width: 500px;
-        margin: 20px auto;
-        padding-top: 20px;
+      a {
+        width: fit-content;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          max-width: 500px;
+          margin: 0 auto;
+        }
       }
       h2 {
         text-align: center;
